@@ -169,13 +169,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aed67f9bd223bc94387f65de7b723174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spoon: {fileID: 391068343}
   _force: 30
+  _ballReloadTimer: 0.5
+  _spoon: {fileID: 391068343}
   _hingeJoint: {fileID: 391068345}
   _ballPrefab: {fileID: 6453513657427252001, guid: 1d7efd72ff947f443912fccc94c9295f,
     type: 3}
   _ballPosition: {fileID: 728841064}
-  _ballReloadTimer: 0.5
 --- !u!1 &261856399
 GameObject:
   m_ObjectHideFlags: 0

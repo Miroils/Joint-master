@@ -6,12 +6,12 @@ using UnityEngine;
 
 public class Catapult : MonoBehaviour
 {
-    [SerializeField] private Rigidbody _spoon;
     [SerializeField] private float _force;
+    [SerializeField] private float _ballReloadTimer;
+    [SerializeField] private Rigidbody _spoon;
     [SerializeField] private HingeJoint _hingeJoint;
     [SerializeField] private GameObject _ballPrefab;
     [SerializeField] private GameObject _ballPosition;
-    [SerializeField] private float _ballReloadTimer;
 
     private bool _isCharging;
     private bool _isBallLoaded;
