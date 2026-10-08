@@ -1,7 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class Catapult : MonoBehaviour
@@ -16,27 +13,21 @@ public class Catapult : MonoBehaviour
     private bool _isCharging;
     private bool _isBallLoaded;
     private bool _isLoading;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))//07 10 левая
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             ChargeSpoon();
         }
-        if (Input.GetKeyDown(KeyCode.Mouse1))//07 10 правая
+        if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             if (_isBallLoaded)
             {
                 Launch();
             }
         }
-        if (_isCharging) //07 11 првоерка на угол
+        if (_isCharging)
         {
             _spoon.AddForce(-_spoon.transform.position * _force, ForceMode.Force);
             
@@ -49,6 +40,11 @@ public class Catapult : MonoBehaviour
                 }                
             }
         }
+    }
+
+    private void FixedUpdate()
+    {
+        
     }
 
     private IEnumerator LoadBall()
