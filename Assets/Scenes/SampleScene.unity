@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aed67f9bd223bc94387f65de7b723174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _force: 30
+  _force: 100
   _ballReloadTimer: 0.5
   _spoon: {fileID: 391068343}
   _hingeJoint: {fileID: 391068345}

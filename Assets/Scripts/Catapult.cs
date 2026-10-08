@@ -27,6 +27,10 @@ public class Catapult : MonoBehaviour
                 Launch();
             }
         }
+    }
+
+    private void FixedUpdate()
+    {
         if (_isCharging)
         {
             _spoon.AddForce(-_spoon.transform.position * _force, ForceMode.Force);
@@ -39,12 +43,7 @@ public class Catapult : MonoBehaviour
                     StartCoroutine(LoadBall());
                 }                
             }
-        }
-    }
-
-    private void FixedUpdate()
-    {
-        
+        }        
     }
 
     private IEnumerator LoadBall()
